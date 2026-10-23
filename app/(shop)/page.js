@@ -33,7 +33,7 @@ export default async function Home() {
           fill
           priority
           sizes="100vw"
-          className="z-0 object-contain opacity-50 sm:object-cover sm:object-right"
+          className="z-0 object-contain object-center opacity-60 sm:object-cover sm:object-right sm:opacity-70"
         />
         <div className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-r from-ink via-ink/80 to-ink/40" />
         <div className="pointer-events-none absolute -right-24 -top-24 z-20 h-[28rem] w-[28rem] animate-glow rounded-full bg-brand-500/50 blur-[110px]" />
