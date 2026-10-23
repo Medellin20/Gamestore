@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import ProductCard from '@/components/ProductCard';
 import { getCategories, getProducts } from '@/services/products';
 
@@ -26,9 +27,18 @@ export default async function Home() {
   return (
     <>
       <section className="relative overflow-hidden bg-ink text-white">
-        <div className="pointer-events-none absolute -right-24 -top-24 h-[28rem] w-[28rem] animate-glow rounded-full bg-brand-500/50 blur-[110px]" />
-        <div className="pointer-events-none absolute -bottom-32 left-1/4 h-80 w-80 animate-glow rounded-full bg-cyan-400/20 blur-[110px]" />
-        <div className="container-x relative py-20 sm:py-28 lg:py-36">
+        <Image
+          src="/hero-iphone-pro.png"
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className="z-0 object-contain opacity-50 sm:object-cover sm:object-right"
+        />
+        <div className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-r from-ink via-ink/80 to-ink/40" />
+        <div className="pointer-events-none absolute -right-24 -top-24 z-20 h-[28rem] w-[28rem] animate-glow rounded-full bg-brand-500/50 blur-[110px]" />
+        <div className="pointer-events-none absolute -bottom-32 left-1/4 z-20 h-80 w-80 animate-glow rounded-full bg-cyan-400/20 blur-[110px]" />
+        <div className="container-x relative z-30 py-20 sm:py-28 lg:py-36">
           <h1 className="max-w-3xl text-4xl font-semibold leading-[1.05] tracking-tight sm:text-6xl lg:text-7xl">
             iPhone, PS5 et tout ce qui va avec.
           </h1>
