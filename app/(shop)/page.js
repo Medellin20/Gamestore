@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import ProductCard from '@/components/ProductCard';
 import { getCategories, getProducts } from '@/services/products';
 
@@ -27,19 +26,9 @@ export default async function Home() {
   return (
     <>
       <section className="relative overflow-hidden bg-ink text-white">
-        <Image
-          src="/hero-iphone-pro.png"
-          alt=""
-          width={593}
-          height={215}
-          priority
-          sizes="(max-width: 640px) 100vw, 780px"
-          className="absolute right-0 top-1/2 z-0 h-auto w-full max-w-[593px] -translate-y-1/2 object-contain object-right opacity-30 sm:max-w-[780px] sm:w-[68%] sm:opacity-55"
-        />
-        <div className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-r from-ink via-ink/80 to-ink/40" />
-        <div className="pointer-events-none absolute -right-24 -top-24 z-20 h-[28rem] w-[28rem] animate-glow rounded-full bg-brand-500/50 blur-[110px]" />
-        <div className="pointer-events-none absolute -bottom-32 left-1/4 z-20 h-80 w-80 animate-glow rounded-full bg-cyan-400/20 blur-[110px]" />
-        <div className="container-x relative z-30 py-20 sm:py-28 lg:py-36">
+        <div className="pointer-events-none absolute -right-24 -top-24 h-[28rem] w-[28rem] animate-glow rounded-full bg-brand-500/50 blur-[110px]" />
+        <div className="pointer-events-none absolute -bottom-32 left-1/4 h-80 w-80 animate-glow rounded-full bg-cyan-400/20 blur-[110px]" />
+        <div className="container-x relative py-20 sm:py-28 lg:py-36">
           <h1 className="max-w-3xl text-4xl font-semibold leading-[1.05] tracking-tight sm:text-6xl lg:text-7xl">
             iPhone, PS5 et tout ce qui va avec.
           </h1>
